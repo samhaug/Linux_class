@@ -1,0 +1,247 @@
+
+ --Output from Act2 activity-activity diagram generator--
+
+ Temperature is 25 C;  Pressure is 1.013 bars
+
+ pH plotted on the X axis from 0 to 14
+ Eh (volts) (swapped for O2(aq)) plotted on the Y axis from -.75 to 1.25
+
+ Stability limits of water
+
+  Reaction                                            Log K      Equation
+ ------------------------------------------------------------------------------------------------------
+  H2(g)  = 2*H+  + 2*e-                               0          Y =-.05916  *X + 0
+  O2(g)  + 4*H+  + 4*e-  = 2*H2O                      83.1       Y =-.05916  *X + 1.229
+ ------------------------------------------------------------------------------------------------------
+
+ Diagram for Scorodite
+
+  Basis species     Activity/Fugacity
+ -----------------------------------------------------------------
+  Scorodite             1               (main species)
+  H2O                   1               (solvent)
+  H+                    -on X-axis-
+  e-                    -on Y-axis-
+  Fe++                  1e-6
+  SO4--                 .001
+ -----------------------------------------------------------------
+
+ Species and minerals in main system
+
+                  Activity    Reaction                                                        Log K
+ ------------------------------------------------------------------------------------------------------
+  As(OH)4-         1          As(OH)4-  + 2*H2O  + Fe++  = Scorodite  + 4*H+  + 3*e-         -23.5911
+  AsH3(aq)         1          AsH3(aq)  + 6*H2O  + Fe++  = Scorodite  + 11*H+  + 9*e-        -27.9450
+  AsO4---          1          AsO4---  + 2*H2O  + Fe++  = Scorodite  + e-                      7.2250
+  As(OH)3          1          As(OH)3  + 3*H2O  + Fe++  = Scorodite  + 5*H+  + 3*e-          -32.8238
+  AsO2OH--         1          AsO2OH--  + 3*H2O  + Fe++  = Scorodite  + 3*H+  + 3*e-         -12.5787
+  AsS2-            1          AsS2-  + 14*H2O  + Fe++  = Scorodite  + 24*H+  + 19*e-  + 2*  -117.7149
+                              SO4--
+  H2AsO4-          1          H2AsO4-  + 2*H2O  + Fe++  = Scorodite  + 2*H+  + e-            -11.1289
+  H3AsO4           1          H3AsO4  + 2*H2O  + Fe++  = Scorodite  + 3*H+  + e-             -13.3792
+  HAsO4--          1          HAsO4--  + 2*H2O  + Fe++  = Scorodite  + H+  + e-               -4.3708
+  HAsS2            1          HAsS2  + 14*H2O  + Fe++  = Scorodite  + 25*H+  + 19*e-  + 2*  -121.4165
+                              SO4--
+  Arsenolite       1          Arsenolite  + 9*H2O  + 2*Fe++  = 2*Scorodite  + 10*H+  + 6*e   -67.0680
+                              -
+  Arsenopyrite     1          Arsenopyrite  + 10*H2O  = Scorodite  + 16*H+  + 14*e-  + SO4   -73.9161
+                              --
+  As2O5(c)         1          As2O5(c)  + 7*H2O  + 2*Fe++  = 2*Scorodite  + 6*H+  + 2*e-     -20.0676
+  Claudetite       1          Claudetite  + 9*H2O  + 2*Fe++  = 2*Scorodite  + 10*H+  + 6*e   -67.1984
+                              -
+  Orpiment         1          Orpiment  + 24*H2O  + 2*Fe++  = 2*Scorodite  + 40*H+  + 30*e  -227.6185
+                              -  + 3*SO4--
+  Realgar          1          Realgar  + 10*H2O  + Fe++  = Scorodite  + 16*H+  + 12*e-  +    -93.4801
+                              SO4--
+  Scorodite        1          Scorodite  = Scorodite                                           0.0000
+ ------------------------------------------------------------------------------------------------------
+
+    No.     Line equation               Reaction
+ ------------------------------------------------------------------------------------------------------------------------
+      1     Y =   0.043 -   0.069*X     As(OH)4-  + 7*H+  + 6*e-  = AsH3(aq)  + 4*H2O
+      2     Y =   0.912 -   0.118*X     As(OH)4-  = AsO4---  + 4*H+  + 2*e-
+      3     X =   9.233                 As(OH)4-  + H+  = As(OH)3  + H2O
+      4     X =  11.012                 As(OH)4-  = AsO2OH--  + H2O  + H+
+      5     Y =   0.326 -   0.074*X     As(OH)4-  + 20*H+  + 16*e-  + 2*SO4--  = AsS2-  + 12*H2O
+      6     Y =   0.369 -   0.059*X     As(OH)4-  = H2AsO4-  + 2*H+  + 2*e-
+      7     Y =   0.302 -   0.030*X     As(OH)4-  = H3AsO4  + H+  + 2*e-
+      8     Y =   0.569 -   0.089*X     As(OH)4-  = HAsO4--  + 3*H+  + 2*e-
+      9     Y =   0.340 -   0.078*X     As(OH)4-  + 21*H+  + 16*e-  + 2*SO4--  = HAsS2  + 12*H2O
+     10     X =   9.943                 2*As(OH)4-  + 2*H+  = Arsenolite  + 5*H2O
+     11     Y =   0.222 -   0.065*X     As(OH)4-  + 12*H+  + 11*e-  + Fe++  + SO4--  = Arsenopyrite  + 8*H2O
+     12     Y =   0.401 -   0.030*X     2*As(OH)4-  = As2O5(c)  + 3*H2O  + 2*H+  + 4*e-
+     13     X =  10.008                 2*As(OH)4-  + 2*H+  = Claudetite  + 5*H2O
+     14     Y =   0.423 -   0.079*X     2*As(OH)4-  + 32*H+  + 24*e-  + 3*SO4--  = Orpiment  + 20*H2O
+     15     Y =   0.440 -   0.079*X     As(OH)4-  + 12*H+  + 9.002*e-  + SO4--  = Realgar  + 8.001*H2O
+     16     Y =   0.584 -   0.079*X     As(OH)4-  + 2*H2O  + Fe++  = Scorodite  + 4*H+  + 3*e-
+     17     Y =   0.260 -   0.081*X     AsH3(aq)  + 4*H2O  = AsO4---  + 11*H+  + 8*e-
+     18     Y =  -0.048 -   0.059*X     AsH3(aq)  + 3*H2O  = As(OH)3  + 6*H+  + 6*e-
+     19     Y =   0.152 -   0.079*X     AsH3(aq)  + 3*H2O  = AsO2OH--  + 8*H+  + 6*e-
+     20     Y =   0.496 -   0.077*X     AsH3(aq)  + 13*H+  + 10*e-  + 2*SO4--  = AsS2-  + 8*H2O
+     21     Y =   0.124 -   0.067*X     AsH3(aq)  + 4*H2O  = H2AsO4-  + 9*H+  + 8*e-
+     22     Y =   0.108 -   0.059*X     AsH3(aq)  + 4*H2O  = H3AsO4  + 8*H+  + 8*e-
+     23     Y =   0.174 -   0.074*X     AsH3(aq)  + 4*H2O  = HAsO4--  + 10*H+  + 8*e-
+     24     Y =   0.518 -   0.083*X     AsH3(aq)  + 14*H+  + 10*e-  + 2*SO4--  = HAsS2  + 8*H2O
+     25     Y =  -0.055 -   0.059*X     2*AsH3(aq)  + 3*H2O  = Arsenolite  + 12*H+  + 12*e-
+     26     Y =   0.437 -   0.059*X     AsH3(aq)  + 5*H+  + 5*e-  + Fe++  + SO4--  = Arsenopyrite  + 4*H2O
+     27     Y =   0.132 -   0.059*X     2*AsH3(aq)  + 5*H2O  = As2O5(c)  + 16*H+  + 16*e-
+     28     Y =  -0.056 -   0.059*X     2*AsH3(aq)  + 3*H2O  = Claudetite  + 12*H+  + 12*e-
+     29     Y =   0.802 -   0.089*X     2*AsH3(aq)  + 18*H+  + 12*e-  + 3*SO4--  = Orpiment  + 12*H2O
+     30     Y =   1.232 -   0.099*X     AsH3(aq)  + 5.002*H+  + 3.002*e-  + SO4--  = Realgar  + 4.001*H2O
+     31     Y =   0.223 -   0.072*X     AsH3(aq)  + 6*H2O  + Fe++  = Scorodite  + 11*H+  + 9*e-
+     32     Y =   1.185 -   0.148*X     AsO4---  + 5*H+  + 2*e-  = As(OH)3  + H2O
+     33     Y =   0.586 -   0.089*X     AsO4---  + 3*H+  + 2*e-  = AsO2OH--  + H2O
+     34     Y =   0.391 -   0.079*X     AsO4---  + 24*H+  + 18*e-  + 2*SO4--  = AsS2-  + 12*H2O
+     35     X =   9.177                 AsO4---  + 2*H+  = H2AsO4-
+     36     X =   6.868                 AsO4---  + 3*H+  = H3AsO4
+     37     X =  11.596                 AsO4---  + H+  = HAsO4--
+     38     Y =   0.403 -   0.082*X     AsO4---  + 25*H+  + 18*e-  + 2*SO4--  = HAsS2  + 12*H2O
+     39     Y =   1.206 -   0.148*X     2*AsO4---  + 10*H+  + 4*e-  = Arsenolite  + 5*H2O
+     40     Y =   0.328 -   0.073*X     AsO4---  + 16*H+  + 13*e-  + Fe++  + SO4--  = Arsenopyrite  + 8*H2O
+     41     X =   5.753                 2*AsO4---  + 6*H+  = As2O5(c)  + 3*H2O
+     42     Y =   1.208 -   0.148*X     2*AsO4---  + 10*H+  + 4*e-  = Claudetite  + 5*H2O
+     43     Y =   0.492 -   0.085*X     2*AsO4---  + 40*H+  + 28*e-  + 3*SO4--  = Orpiment  + 20*H2O
+     44     Y =   0.525 -   0.086*X     AsO4---  + 16*H+  + 11*e-  + SO4--  = Realgar  + 8.001*H2O
+     45     Y =  -0.072                 AsO4---  + 2*H2O  + Fe++  = Scorodite  + e-
+     46     X =  10.123                 As(OH)3  = AsO2OH--  + 2*H+
+     47     Y =   0.292 -   0.070*X     As(OH)3  + 19*H+  + 16*e-  + 2*SO4--  = AsS2-  + 11*H2O
+     48     Y =   0.642 -   0.089*X     As(OH)3  + H2O  = H2AsO4-  + 3*H+  + 2*e-
+     49     Y =   0.575 -   0.059*X     As(OH)3  + H2O  = H3AsO4  + 2*H+  + 2*e-
+     50     Y =   0.842 -   0.118*X     As(OH)3  + H2O  = HAsO4--  + 4*H+  + 2*e-
+     51     Y =   0.305 -   0.074*X     As(OH)3  + 20*H+  + 16*e-  + 2*SO4--  = HAsS2  + 11*H2O
+     52        Products  favored        2*As(OH)3  = Arsenolite  + 3*H2O
+     53     Y =   0.173 -   0.059*X     As(OH)3  + 11*H+  + 11*e-  + Fe++  + SO4--  = Arsenopyrite  + 7*H2O
+     54     Y =   0.674 -   0.059*X     2*As(OH)3  = As2O5(c)  + H2O  + 4*H+  + 4*e-
+     55        Products  favored        2*As(OH)3  = Claudetite  + 3*H2O
+     56     Y =   0.377 -   0.074*X     2*As(OH)3  + 30*H+  + 24*e-  + 3*SO4--  = Orpiment  + 18*H2O
+     57     Y =   0.379 -   0.072*X     As(OH)3  + 11*H+  + 9.002*e-  + SO4--  = Realgar  + 7.001*H2O
+     58     Y =   0.766 -   0.099*X     As(OH)3  + 3*H2O  + Fe++  = Scorodite  + 5*H+  + 3*e-
+     59     Y =   0.367 -   0.078*X     AsO2OH--  + 21*H+  + 16*e-  + 2*SO4--  = AsS2-  + 11*H2O
+     60     Y =   0.043 -   0.030*X     AsO2OH--  + H2O  = H2AsO4-  + H+  + 2*e-
+     61     Y =  -0.024                 AsO2OH--  + H2O  = H3AsO4  + 2*e-
+     62     Y =   0.243 -   0.059*X     AsO2OH--  + H2O  = HAsO4--  + 2*H+  + 2*e-
+     63     Y =   0.380 -   0.081*X     AsO2OH--  + 22*H+  + 16*e-  + 2*SO4--  = HAsS2  + 11*H2O
+     64     X =  10.478                 2*AsO2OH--  + 4*H+  = Arsenolite  + 3*H2O
+     65     Y =   0.282 -   0.070*X     AsO2OH--  + 13*H+  + 11*e-  + Fe++  + SO4--  = Arsenopyrite  + 7*H2O
+     66     Y =   0.075                 2*AsO2OH--  = As2O5(c)  + H2O  + 4*e-
+     67     X =  10.510                 2*AsO2OH--  + 4*H+  = Claudetite  + 3*H2O
+     68     Y =   0.477 -   0.084*X     2*AsO2OH--  + 34*H+  + 24*e-  + 3*SO4--  = Orpiment  + 18*H2O
+     69     Y =   0.512 -   0.085*X     AsO2OH--  + 13*H+  + 9.002*e-  + SO4--  = Realgar  + 7.001*H2O
+     70     Y =   0.366 -   0.059*X     AsO2OH--  + 3*H2O  + Fe++  = Scorodite  + 3*H+  + 3*e-
+     71     Y =   0.331 -   0.072*X     AsS2-  + 12*H2O  = H2AsO4-  + 22*H+  + 18*e-  + 2*SO4--
+     72     Y =   0.323 -   0.069*X     AsS2-  + 12*H2O  = H3AsO4  + 21*H+  + 18*e-  + 2*SO4--
+     73     Y =   0.353 -   0.076*X     AsS2-  + 12*H2O  = HAsO4--  + 23*H+  + 18*e-  + 2*SO4--
+     74     X =   3.702                 AsS2-  + H+  = HAsS2
+     75     Y =   0.289 -   0.070*X     2*AsS2-  + 19*H2O  = Arsenolite  + 38*H+  + 32*e-  + 4*SO4--
+     76     Y =   0.554 -   0.095*X     AsS2-  + 4*H2O  + Fe++  = Arsenopyrite  + 8*H+  + 5*e-  + SO4--
+     77     Y =   0.334 -   0.069*X     2*AsS2-  + 21*H2O  = As2O5(c)  + 42*H+  + 36*e-  + 4*SO4--
+     78     Y =   0.289 -   0.070*X     2*AsS2-  + 19*H2O  = Claudetite  + 38*H+  + 32*e-  + 4*SO4--
+     79     Y =   0.036 -   0.059*X     2*AsS2-  + 4*H2O  = Orpiment  + 8*H+  + 8*e-  + SO4--
+     80     Y =   0.180 -   0.068*X     AsS2-  + 3.999*H2O  = Realgar  + 7.998*H+  + 6.998*e-  + SO4--
+     81     Y =   0.367 -   0.075*X     AsS2-  + 14*H2O  + Fe++  = Scorodite  + 24*H+  + 19*e-  + 2*SO4--
+     82     X =   2.250                 H2AsO4-  + H+  = H3AsO4
+     83     X =   6.758                 H2AsO4-  = HAsO4--  + H+
+     84     Y =   0.343 -   0.076*X     H2AsO4-  + 23*H+  + 18*e-  + 2*SO4--  = HAsS2  + 12*H2O
+     85     Y =   0.663 -   0.089*X     2*H2AsO4-  + 6*H+  + 4*e-  = Arsenolite  + 5*H2O
+     86     Y =   0.245 -   0.064*X     H2AsO4-  + 14*H+  + 13*e-  + Fe++  + SO4--  = Arsenopyrite  + 8*H2O
+     87     X =  -1.095                 2*H2AsO4-  + 2*H+  = As2O5(c)  + 3*H2O
+     88     Y =   0.665 -   0.089*X     2*H2AsO4-  + 6*H+  + 4*e-  = Claudetite  + 5*H2O
+     89     Y =   0.415 -   0.076*X     2*H2AsO4-  + 36*H+  + 28*e-  + 3*SO4--  = Orpiment  + 20*H2O
+     90     Y =   0.427 -   0.075*X     H2AsO4-  + 14*H+  + 11*e-  + SO4--  = Realgar  + 8.001*H2O
+     91     Y =   1.013 -   0.118*X     H2AsO4-  + 2*H2O  + Fe++  = Scorodite  + 2*H+  + e-
+     92     X =   4.504                 H3AsO4  = HAsO4--  + 2*H+
+     93     Y =   0.335 -   0.072*X     H3AsO4  + 22*H+  + 18*e-  + 2*SO4--  = HAsS2  + 12*H2O
+     94     Y =   0.596 -   0.059*X     2*H3AsO4  + 4*H+  + 4*e-  = Arsenolite  + 5*H2O
+     95     Y =   0.235 -   0.059*X     H3AsO4  + 13*H+  + 13*e-  + Fe++  + SO4--  = Arsenopyrite  + 8*H2O
+     96        Reactants favored        2*H3AsO4  = As2O5(c)  + 3*H2O
+     97     Y =   0.598 -   0.059*X     2*H3AsO4  + 4*H+  + 4*e-  = Claudetite  + 5*H2O
+     98     Y =   0.405 -   0.072*X     2*H3AsO4  + 34*H+  + 28*e-  + 3*SO4--  = Orpiment  + 20*H2O
+     99     Y =   0.415 -   0.070*X     H3AsO4  + 13*H+  + 11*e-  + SO4--  = Realgar  + 8.001*H2O
+    100     Y =   1.147 -   0.177*X     H3AsO4  + 2*H2O  + Fe++  = Scorodite  + 3*H+  + e-
+    101     Y =   0.365 -   0.079*X     HAsO4--  + 24*H+  + 18*e-  + 2*SO4--  = HAsS2  + 12*H2O
+    102     Y =   0.863 -   0.118*X     2*HAsO4--  + 8*H+  + 4*e-  = Arsenolite  + 5*H2O
+    103     Y =   0.276 -   0.068*X     HAsO4--  + 15*H+  + 13*e-  + Fe++  + SO4--  = Arsenopyrite  + 8*H2O
+    104     X =   2.832                 2*HAsO4--  + 4*H+  = As2O5(c)  + 3*H2O
+    105     Y =   0.865 -   0.118*X     2*HAsO4--  + 8*H+  + 4*e-  = Claudetite  + 5*H2O
+    106     Y =   0.443 -   0.080*X     2*HAsO4--  + 38*H+  + 28*e-  + 3*SO4--  = Orpiment  + 20*H2O
+    107     Y =   0.463 -   0.081*X     HAsO4--  + 15*H+  + 11*e-  + SO4--  = Realgar  + 8.001*H2O
+    108     Y =   0.614 -   0.059*X     HAsO4--  + 2*H2O  + Fe++  = Scorodite  + H+  + e-
+    109     Y =   0.303 -   0.074*X     2*HAsS2  + 19*H2O  = Arsenolite  + 40*H+  + 32*e-  + 4*SO4--
+    110     Y =   0.598 -   0.106*X     HAsS2  + 4*H2O  + Fe++  = Arsenopyrite  + 9*H+  + 5*e-  + SO4--
+    111     Y =   0.346 -   0.072*X     2*HAsS2  + 21*H2O  = As2O5(c)  + 44*H+  + 36*e-  + 4*SO4--
+    112     Y =   0.303 -   0.074*X     2*HAsS2  + 19*H2O  = Claudetite  + 40*H+  + 32*e-  + 4*SO4--
+    113     Y =   0.090 -   0.074*X     2*HAsS2  + 4*H2O  = Orpiment  + 10*H+  + 8*e-  + SO4--
+    114     Y =   0.211 -   0.076*X     HAsS2  + 3.999*H2O  = Realgar  + 8.998*H+  + 6.998*e-  + SO4--
+    115     Y =   0.378 -   0.078*X     HAsS2  + 14*H2O  + Fe++  = Scorodite  + 25*H+  + 19*e-  + 2*SO4--
+    116     Y =   0.169 -   0.059*X     Arsenolite  + 22*H+  + 22*e-  + 2*Fe++  + 2*SO4--  = 2*Arsenopyrite  + 11*H2O
+    117     Y =   0.695 -   0.059*X     Arsenolite  + 2*H2O  = As2O5(c)  + 4*H+  + 4*e-
+    118        Products  favored        Arsenolite  = Claudetite
+    119     Y =   0.374 -   0.074*X     Arsenolite  + 30*H+  + 24*e-  + 3*SO4--  = Orpiment  + 15*H2O
+    120     Y =   0.374 -   0.072*X     Arsenolite  + 22*H+  + 18*e-  + 2*SO4--  = 2*Realgar  + 11*H2O
+    121     Y =   0.780 -   0.099*X     Arsenolite  + 9*H2O  + 2*Fe++  = 2*Scorodite  + 10*H+  + 6*e-
+    122     Y =   0.250 -   0.059*X     2*Arsenopyrite  + 13*H2O  = As2O5(c)  + 26*H+  + 26*e-  + 2*Fe++  + 2*SO4--
+    123     Y =   0.168 -   0.059*X     2*Arsenopyrite  + 11*H2O  = Claudetite  + 22*H+  + 22*e-  + 2*Fe++  + 2*SO4--
+    124     Y =   2.627 -   0.237*X     2*Arsenopyrite  + 8*H+  + 2*e-  + SO4--  = Orpiment  + 4*H2O  + 2*Fe++
+    125     Y =  -0.757 +   0.000*X     Arsenopyrite  + .002*H+  = Realgar  + .001*H2O  + 1.998*e-  + Fe++
+    126     Y =   0.300 -   0.068*X     Arsenopyrite  + 10*H2O  = Scorodite  + 16*H+  + 14*e-  + SO4--
+    127     Y =   0.697 -   0.059*X     As2O5(c)  + 4*H+  + 4*e-  = Claudetite  + 2*H2O
+    128     Y =   0.420 -   0.072*X     As2O5(c)  + 34*H+  + 28*e-  + 3*SO4--  = Orpiment  + 17*H2O
+    129     Y =   0.433 -   0.070*X     As2O5(c)  + 26*H+  + 22*e-  + 2*SO4--  = 2*Realgar  + 13*H2O
+    130     Y =   0.949 -   0.177*X     As2O5(c)  + 7*H2O  + 2*Fe++  = 2*Scorodite  + 6*H+  + 2*e-
+    131     Y =   0.373 -   0.074*X     Claudetite  + 30*H+  + 24*e-  + 3*SO4--  = Orpiment  + 15*H2O
+    132     Y =   0.374 -   0.072*X     Claudetite  + 22*H+  + 18*e-  + 2*SO4--  = 2*Realgar  + 11*H2O
+    133     Y =   0.781 -   0.099*X     Claudetite  + 9*H2O  + 2*Fe++  = 2*Scorodite  + 10*H+  + 6*e-
+    134     Y =   0.372 -   0.079*X     Orpiment  + 3.998*H2O  = 2*Realgar  + 7.996*H+  + 5.996*e-  + SO4--
+    135     Y =   0.455 -   0.079*X     Orpiment  + 24*H2O  + 2*Fe++  = 2*Scorodite  + 40*H+  + 30*e-  + 3*SO4--
+    136     Y =   0.476 -   0.079*X     Realgar  + 10*H2O  + Fe++  = Scorodite  + 16*H+  + 12*e-  + SO4--
+ ------------------------------------------------------------------------------------------------------------------------
+
+ Main Diagram
+
+                        pH(1) Eh (V)(1)           pH(2) Eh (V)(2)    Equation  Type
+ -------------------------------------------------------------------------------------
+  As(OH)4-            10.008    -0.320          11.012    -0.409          8    Upper
+                      11.012    -0.429          10.008    -0.350         15    Lower
+                      10.008    -0.350          10.008    -0.320         13    Left
+                      11.012    -0.409          11.012    -0.429          4    Right
+  AsO4---             11.596    -0.072          14.000    -0.072         45    Upper
+                      14.000    -0.657          11.596    -0.443         33    Lower
+                      11.596    -0.443          11.596    -0.072         37    Left
+  AsO2OH--            11.012    -0.409          11.596    -0.443         62    Upper
+                      11.596    -0.443          14.000    -0.657         33    Upper
+                      14.000    -0.684          11.012    -0.429         69    Lower
+                      11.012    -0.429          11.012    -0.409          4    Left
+  AsS2-                3.702    -0.183          13.278    -0.750         79    Upper
+                       3.702    -0.219           3.702    -0.183         74    Left
+  H2AsO4-              2.250     0.747           6.758     0.214         91    Upper
+                       6.758     0.065           2.250     0.465         88    Lower
+                       2.250     0.465           2.250     0.747         82    Left
+                       6.758     0.214           6.758     0.065         83    Right
+  H3AsO4               0.000     1.147           2.250     0.747        100    Upper
+                       2.250     0.465           0.000     0.598         97    Lower
+                       2.250     0.747           2.250     0.465         82    Right
+  HAsO4--              6.758     0.214          11.596    -0.072        108    Upper
+                      11.596    -0.443          11.012    -0.409         62    Lower
+                      11.012    -0.409          10.008    -0.320          8    Lower
+                      10.008    -0.320           6.758     0.065        105    Lower
+                       6.758     0.065           6.758     0.214         83    Left
+                      11.596    -0.072          11.596    -0.443         37    Right
+  HAsS2                0.000     0.090           3.702    -0.183        113    Upper
+                       3.702    -0.183           3.702    -0.219         74    Right
+  Claudetite           0.000     0.598           2.250     0.465         97    Upper
+                       2.250     0.465           6.758     0.065         88    Upper
+                       6.758     0.065          10.008    -0.320        105    Upper
+                      10.008    -0.350           0.000     0.374        132    Lower
+                      10.008    -0.320          10.008    -0.350         13    Right
+  Orpiment             0.000     0.372          14.000    -0.733        134    Upper
+                      13.278    -0.750           3.702    -0.183         79    Lower
+                       3.702    -0.183           0.000     0.090        113    Lower
+  Realgar              0.000     0.374          10.008    -0.350        132    Upper
+                      10.008    -0.350          11.012    -0.429         15    Upper
+                      11.012    -0.429          14.000    -0.684         69    Upper
+                      14.000    -0.733           0.000     0.372        134    Lower
+  Scorodite           14.000    -0.072          11.596    -0.072         45    Lower
+                      11.596    -0.072           6.758     0.214        108    Lower
+                       6.758     0.214           2.250     0.747         91    Lower
+                       2.250     0.747           0.000     1.147        100    Lower
+ -------------------------------------------------------------------------------------
