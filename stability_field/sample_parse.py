@@ -4,7 +4,7 @@
 File Name : sample_parse.py
 Purpose : Learn to parse file
 Creation Date : 11-01-2018
-Last Modified : Thu 11 Jan 2018 10:14:37 AM EST
+Last Modified : Thu 11 Jan 2018 12:54:28 PM EST
 Created By : Samuel M. Haugland
 
 ___________.__                                                         _____
