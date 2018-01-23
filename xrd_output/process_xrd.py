@@ -6,7 +6,7 @@
 File Name : process_xrd.py
 Purpose : Smooth, find peaks, plot
 Creation Date : 14-01-2018
-Last Modified : Sun 14 Jan 2018 01:24:40 PM EST
+Last Modified : Tue 23 Jan 2018 10:55:46 AM EST
 Created By : Samuel M. Haugland
 
 ==============================================================================
@@ -16,7 +16,6 @@ import numpy as np
 from scipy.ndimage.filters import gaussian_filter
 from scipy.signal import argrelextrema
 from matplotlib import pyplot as plt
-from subprocess import call
 
 def main():
     xray_info,data = read_data('./2M1-std2.TXT')
