@@ -6,7 +6,7 @@
 File Name : make_random.py
 Purpose : create a large dataset by modifying one file with random noise
 Creation Date : 23-01-2018
-Last Modified : Tue 23 Jan 2018 10:54:55 AM EST
+Last Modified : Tue 23 Jan 2018 06:36:32 PM EST
 Created By : Samuel M. Haugland
 
 ==============================================================================
@@ -33,9 +33,9 @@ def main ():
         #make array of random floats between -1 and 1.
         r = np.random.uniform(-1,1,size=len(seed_array[:,1]))
 
-        #multiply this by 1/4 the minimum value of 
+        #multiply this by 1/2 the minimum value of 
         #the array to make a bed of noise.
-        r *= seed_array[:,1].min()*0.25
+        r *= seed_array[:,1].min()*0.5
         rand_seed = seed_array[:,1] + r
 
         #make name for new random file by modifying original name

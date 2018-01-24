@@ -5,7 +5,7 @@
 File Name : xrd_statistics.py
 Purpose : Find mean,min,max,std,etc of group of xrd 'runs'
 Creation Date : 23-01-2018
-Last Modified : Tue 23 Jan 2018 11:02:16 AM EST
+Last Modified : Tue 23 Jan 2018 06:41:24 PM EST
 Created By : Samuel M. Haugland
 
 ==============================================================================
