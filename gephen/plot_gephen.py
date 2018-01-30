@@ -6,7 +6,7 @@
 File Name : plot_gephen.py
 Purpose : reproduce scatter plot
 Creation Date : 06-01-2018
-Last Modified : Sat 06 Jan 2018 05:37:43 PM EST
+Last Modified : Tue 23 Jan 2018 06:41:19 PM EST
 Created By : Samuel M. Haugland
 
 ==============================================================================

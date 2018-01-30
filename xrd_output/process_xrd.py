@@ -6,7 +6,7 @@
 File Name : process_xrd.py
 Purpose : Smooth, find peaks, plot
 Creation Date : 14-01-2018
-Last Modified : Tue 23 Jan 2018 07:15:53 PM EST
+Last Modified : Tue 23 Jan 2018 07:21:43 PM EST
 Created By : Samuel M. Haugland
 
 ==============================================================================
@@ -45,10 +45,10 @@ def average_spectra(theta_range,spectra_list,ax):
 def find_peaks(data,ax):
     g_1 = gaussian_filter(data[:,1],8)
     idx_max = argrelextrema(g_1,np.greater)[0]
-    ax.plot(data[:,0],data[:,1],color='k',alpha=0.5)
-    ax.plot(data[:,0],g_1)
+    ax.plot(data[:,0],data[:,1],color='k',alpha=0.5,lw=0.7)
+    ax.plot(data[:,0],g_1,lw=0.7)
     for ii in idx_max:
-        ax.axvline(data[ii,0],color='k',alpha=0.3)
+        ax.axvline(data[ii,0],color='k',alpha=0.7,lw=0.5)
 
 def read_data(path_to_xrd_file):
     f = open(path_to_xrd_file).readlines()
