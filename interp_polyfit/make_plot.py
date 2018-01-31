@@ -6,7 +6,7 @@
 File Name : make_plot.py
 Purpose : Reproduce first plot in diagrams.pdf
 Creation Date : 30-01-2018
-Last Modified : Wed 31 Jan 2018 10:47:45 AM EST
+Last Modified : Wed 31 Jan 2018 11:14:42 AM EST
 Created By : Samuel M. Haugland
 
 ==============================================================================

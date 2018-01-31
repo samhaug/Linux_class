@@ -1,8 +1,9 @@
 # Linux_class
 
 Output files of various instruments/programs used at Umich EES dept.
-
 Example python scrips on how to analyze and plot results.
+Learn how to analyze data and make publication-quality plots with python. Also
+learn basic bash navigation and file manipulation. Work more efficiently.
 
 Week 1: Intro to the terminal, basic bash commands, VI. Vimtutor, linuxjourney. No directory to work out of
 
