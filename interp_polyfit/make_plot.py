@@ -4,9 +4,9 @@
 ==============================================================================
 
 File Name : make_plot.py
-Purpose : ---
+Purpose : Reproduce first plot in diagrams.pdf
 Creation Date : 30-01-2018
-Last Modified : Wed 31 Jan 2018 10:26:06 AM EST
+Last Modified : Wed 31 Jan 2018 10:41:28 AM EST
 Created By : Samuel M. Haugland
 
 ==============================================================================
@@ -142,6 +142,8 @@ def plot_purple_diamonds(ax,fname):
     coords = np.genfromtxt(fname,delimiter=',')
     ax.scatter(coords[:,0],coords[:,1],marker='d',facecolors='none',
               edgecolors='purple',s=60,alpha=1.0)
+    ax.scatter(np.mean(coords[:,0]),np.mean(coords[:,1]),marker='+',s=500,
+               color='purple')
 
 def setup_figure():
     fig,ax = plt.subplots(figsize=(7,7))
