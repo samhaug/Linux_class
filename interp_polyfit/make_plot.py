@@ -6,7 +6,7 @@
 File Name : make_plot.py
 Purpose : Reproduce first plot in diagrams.pdf
 Creation Date : 30-01-2018
-Last Modified : Wed 31 Jan 2018 10:41:28 AM EST
+Last Modified : Wed 31 Jan 2018 10:47:45 AM EST
 Created By : Samuel M. Haugland
 
 ==============================================================================
@@ -78,7 +78,7 @@ def plot_kiruna_poly(ax,fname):
 def plot_BIF_poly(ax,fname):
     coords = np.genfromtxt(fname,delimiter=',')
     polygon = Polygon(coords,True)
-    p = PatchCollection([polygon],lw=2,facecolor='none',
+    p = PatchCollection([polygon],lw=1.5,facecolor='none',
                          edgecolor='k',linestyle='--')
     ax.add_collection(p)
     ax.text(0.02261,0.054844,'BIF',size=12)
@@ -113,35 +113,35 @@ def fit_skarn_porphyry(ax,fname):
 def plot_red_triangles(ax,fname):
     coords = np.genfromtxt(fname,delimiter=',')
     ax.scatter(coords[:,0],coords[:,1],marker='v',color='r',facecolors='none',
-              edgecolors='firebrick',s=60,alpha=0.6)
+              edgecolors='firebrick',s=60,alpha=0.6,rasterized=False)
     ax.scatter(np.mean(coords[:,0]),np.mean(coords[:,1]),marker='+',s=500,
                color='firebrick')
 
 def plot_green_triangles(ax,fname):
     coords = np.genfromtxt(fname,delimiter=',')
     ax.scatter(coords[:,0],coords[:,1],marker='^',facecolors='none',
-              edgecolors='olive',s=60,alpha=0.6)
+              edgecolors='olive',s=60,alpha=0.6,rasterized=False)
     ax.scatter(np.mean(coords[:,0]),np.mean(coords[:,1]),marker='+',s=500,
                color='olive')
 
 def plot_yellow_squares(ax,fname):
     coords = np.genfromtxt(fname,delimiter=',')
     ax.scatter(coords[:,0],coords[:,1],marker='s',facecolors='none',
-              edgecolors='goldenrod',s=60,alpha=0.6)
+              edgecolors='goldenrod',s=60,alpha=0.6,rasterized=False)
     ax.scatter(np.mean(coords[:,0]),np.mean(coords[:,1]),marker='+',s=500,
                color='goldenrod')
 
 def plot_blue_circles(ax,fname,alpha):
     coords = np.genfromtxt(fname,delimiter=',')
     ax.scatter(coords[:,0],coords[:,1],marker='o',facecolors='none',
-              edgecolors='steelblue',s=60,alpha=alpha)
+              edgecolors='steelblue',s=60,alpha=alpha,rasterized=False)
     ax.scatter(np.mean(coords[:,0]),np.mean(coords[:,1]),marker='+',s=500,
                color='steelblue')
 
 def plot_purple_diamonds(ax,fname):
     coords = np.genfromtxt(fname,delimiter=',')
     ax.scatter(coords[:,0],coords[:,1],marker='d',facecolors='none',
-              edgecolors='purple',s=60,alpha=1.0)
+              edgecolors='purple',s=60,alpha=1.0,rasterized=False)
     ax.scatter(np.mean(coords[:,0]),np.mean(coords[:,1]),marker='+',s=500,
                color='purple')
 
