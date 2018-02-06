@@ -6,7 +6,7 @@
 File Name : sams_version.py
 Purpose : Make Sam's version of Spencer's Mercury plot
 Creation Date : 03-02-2018
-Last Modified : Tue 06 Feb 2018 03:21:32 PM EST
+Last Modified : Tue 06 Feb 2018 03:30:02 PM EST
 Created By : Samuel M. Haugland
 
 ==============================================================================
@@ -63,7 +63,7 @@ def setup_figure(color_202,color_199):
     # twinx() clones the axes and places it on top of the original.
     ax_199 = ax_202.twinx()
 
-    ax_202.set_xlabel('% Distance Through Reactor Bed',size=12)
+    ax_202.set_xlabel('% Distance through reactor bed',size=12)
     ax_202.set_ylabel(r'$\delta^{202}$ Hg $(\perthousand)$',size=12)
     ax_199.set_ylabel(r'$\Delta^{199}$ Hg $(\perthousand)$',size=12)
 
