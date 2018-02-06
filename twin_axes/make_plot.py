@@ -6,7 +6,7 @@
 File Name : make_plot.py
 Purpose : Reproduce Spencer's Mercury plot
 Creation Date : 03-02-2018
-Last Modified : Tue 06 Feb 2018 11:09:13 AM EST
+Last Modified : Tue 06 Feb 2018 11:16:28 AM EST
 Created By : Samuel M. Haugland
 
 ==============================================================================
@@ -46,7 +46,10 @@ def main():
                    edgecolor='k',lw=1,label=r'$\Delta$199 Values')
 
     #handles,labels = ax_202.get_legend_handles_labels()
-    legend = ax_202.legend(loc='upper right',fontsize=10,borderaxespad=0,
+    font = {'family': 'serif',
+            'color':  'black',
+            'size': 10}
+    legend = ax_202.legend(loc='upper right',fontdict=font,borderaxespad=0,
                             markerscale=0.8)
     legend.get_frame().set_edgecolor('k')
 
