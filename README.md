@@ -14,3 +14,5 @@ Week 3: Work out of gephen/. Simple scatter plotting and parsing. Intro to matpl
 Week 4: Work out of xrd\_outptut. Multiple subplot figures. Parsing xrd output file. ax.fill\_between. Gaussian blur from the scipy library to find peaks.
 
 Week 5: Work out of interp\_polyfit. Use webplotdigitizer to get data from display.pdf and reproduce. Use Polygon patches, text annotation, interp1d, and polyfit.
+
+Week 6: Work out of twin\_axes. Reproduce Spencer's scatterplot and introduce axes twinning. make\_plot.py reproduces the figure as close as possible, sams\_version shows a different concept.

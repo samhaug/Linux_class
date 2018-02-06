@@ -6,7 +6,7 @@
 File Name : sams_version.py
 Purpose : Make Sam's version of Spencer's Mercury plot
 Creation Date : 03-02-2018
-Last Modified : Tue 06 Feb 2018 03:30:02 PM EST
+Last Modified : Tue 06 Feb 2018 03:44:31 PM EST
 Created By : Samuel M. Haugland
 
 ==============================================================================
