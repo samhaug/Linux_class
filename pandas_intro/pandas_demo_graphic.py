@@ -6,8 +6,31 @@
 File Name : pandas_demo.py
 Purpose : Introduce some basic pandas functionalities
 Creation Date : 14-02-2018
-Last Modified : Wed 14 Feb 2018 01:00:08 PM EST
+Last Modified : Wed 14 Feb 2018 12:32:49 PM EST
 Created By : Samuel M. Haugland
+
+   ▄███████▄    ▄████████ ███▄▄▄▄   ████████▄     ▄████████
+  ███    ███   ███    ███ ███▀▀▀██▄ ███   ▀███   ███    ███
+  ███    ███   ███    ███ ███   ███ ███    ███   ███    ███
+  ███    ███   ███    ███ ███   ███ ███    ███   ███    ███
+▀█████████▀  ▀███████████ ███   ███ ███    ███ ▀███████████
+  ███          ███    ███ ███   ███ ███    ███   ███    ███
+  ███          ███    ███ ███   ███ ███   ▄███   ███    ███
+ ▄████▀        ███    █▀   ▀█   █▀  ████████▀    ███    █▀
+   ▄███████▄  ▄██████▄   ▄█     █▄     ▄████████    ▄████████
+  ███    ███ ███    ███ ███     ███   ███    ███   ███    ███
+  ███    ███ ███    ███ ███     ███   ███    █▀    ███    ███
+  ███    ███ ███    ███ ███     ███  ▄███▄▄▄      ▄███▄▄▄▄██▀
+▀█████████▀  ███    ███ ███     ███ ▀▀███▀▀▀     ▀▀███▀▀▀▀▀
+  ███        ███    ███ ███     ███   ███    █▄  ▀███████████
+  ███        ███    ███ ███ ▄█▄ ███   ███    ███   ███    ███
+ ▄████▀       ▀██████▀   ▀███▀███▀    ██████████   ███    ███
+                                                   ███    ███
+
+The library’s name derives from PAnel DAta,
+a common term for multidimensional data sets
+encountered in statistics and econometrics.
+
 ==============================================================================
 '''
 
@@ -17,8 +40,8 @@ import pandas as pd
 
 
 # Read excel file to DataFrame object
-df = pd.read_excel('appendixB.xlsx',skiprows=2)
-df_3 = pd.read_excel('appendixB.xlsx',skiprows=3)
+df = pandas.read_excel('appendixB.xlsx',header=2)
+df_3 = pandas.read_excel('appendixB.xlsx',header=3)
 
 # Dataframe objects are just concatenated series objects, a series is a single
 # column
@@ -63,7 +86,7 @@ not_takahashi = df.loc[(df['Study']!='Takahashi, 1978') |
                        (df['xtal phases']=='gl+ol+sp')]
 
 # Find all studies with NaN in the 'melt CoO' position
-no_coo = df_3.loc[df_3['melt CoO'].isnull()]
+no_coo = df_3.loc[df['melt CoO'].isnull()]
 
 # Crosstabulate to get a quick overview of the data in a sheet
 cross = pd.crosstab(df['Study'],df['xtal phases'],margins=True)
@@ -88,16 +111,14 @@ sort_df = df.sort_values(['Study','sample #'],ascending=[1,0])
 t_k = df['T(K)'].values
 
 #Merge these two into one dataset
-#USE SKIPROWS, NOT HEADER
-df = df[df.columns[0:9]]
-d_3 = df_3[df_3.columns[9::]]
-df = df.drop([0])
-df_merge = pd.concat([df,df_3],axis=1)
+df_merge = pd.concat(df_2[df_2.columns[0:10]],
+                     df_3[df_3.columns[9::]],
+                     axis=1)
 
 #Save multiple dataframes to different sheets in excel file
 writer = pd.ExcelWriter('output.xlsx')
 df_merge.to_excel(writer,'Sheet1')
-df.to_excel(writer,'Sheet2')
+df_2.to_excel(writer,'Sheet2')
 df_3.to_excel(writer,'Sheet3')
 writer.save()
 
