@@ -6,10 +6,8 @@
 File Name : pandas_demo.py
 Purpose : Introduce some basic pandas functionalities
 Creation Date : 14-02-2018
-Last Modified : Wed 14 Feb 2018 11:31:27 AM EST
+Last Modified : Wed 14 Feb 2018 11:38:25 AM EST
 Created By : Samuel M. Haugland
-
-==============================================================================
 
    ▄███████▄    ▄████████ ███▄▄▄▄   ████████▄     ▄████████
   ███    ███   ███    ███ ███▀▀▀██▄ ███   ▀███   ███    ███
@@ -32,6 +30,8 @@ Created By : Samuel M. Haugland
 The library’s name derives from PAnel DAta,
 a common term for multidimensional data sets
 encountered in statistics and econometrics.
+
+==============================================================================
 '''
 
 import numpy as np
