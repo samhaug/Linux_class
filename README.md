@@ -18,5 +18,6 @@ Week 5: Work out of interp\_polyfit. Use webplotdigitizer to get data from displ
 Week 6: Work out of twin\_axes. Reproduce Spencer's scatterplot and introduce axes twinning. make\_plot.py reproduces the figure as close as possible, sams\_version shows a different concept.
 
 Week 7: Introduce the Pandas series object and how it relates to the 
-dataframe object. Also loose ends with vimrc, bashrc, ipython startup,
-chmod.
+dataframe object. Also loose ends with vimrc, bashrc, ipython startup,chmod. 
+Work out of pandas\_intro and rc\_files.
+

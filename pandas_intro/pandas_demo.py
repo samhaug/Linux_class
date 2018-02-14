@@ -6,7 +6,7 @@
 File Name : pandas_demo.py
 Purpose : Introduce some basic pandas functionalities
 Creation Date : 14-02-2018
-Last Modified : Wed 14 Feb 2018 11:38:25 AM EST
+Last Modified : Wed 14 Feb 2018 11:41:03 AM EST
 Created By : Samuel M. Haugland
 
    ▄███████▄    ▄████████ ███▄▄▄▄   ████████▄     ▄████████
@@ -78,12 +78,12 @@ takahashi = df.loc[(df['Study']=='Takahashi, 1978') &
 
 # Index all studies by takahashi,1978 or studies that have gl+ol+sp as xtal phase
 takahashi_or_glolsp = df.loc[(df['Study']=='Takahashi, 1978') |
-                   (df['xtal phases']=='gl+ol+sp')]
+                             (df['xtal phases']=='gl+ol+sp')]
 
 # Index all studies not by takahashi,1978 or studies that have gl+ol+sp 
 # as xtal phase
 not_takahashi = df.loc[(df['Study']!='Takahashi, 1978') |
-                    (df['xtal phases']=='gl+ol+sp')]
+                       (df['xtal phases']=='gl+ol+sp')]
 
 # Find all studies with NaN in the 'melt CoO' position
 no_coo = df_3.loc[df['melt CoO'].isnull()]
