@@ -9,7 +9,7 @@ Week 1: Intro to the terminal, basic bash commands, VI. Vimtutor, linuxjourney. 
 
 Week 2: Intalling the Anaconda package together. Work out of lists\_and\_strings. Strings,lists,file parsing, ipython interpreter.
 
-Week 3: Work out of gephen/. Simple scatter plotting and parsing. Intro to matplotlib and numpy.
+Week 3: Work out of gephen directory. Simple scatter plotting and parsing. Intro to matplotlib and numpy.
 
 Week 4: Work out of xrd\_outptut. Multiple subplot figures. Parsing xrd output file. ax.fill\_between. Gaussian blur from the scipy library to find peaks.
 
@@ -21,3 +21,7 @@ Week 7: Introduce the Pandas series object and how it relates to the
 dataframe object. Also loose ends with vimrc, bashrc, ipython startup,chmod. 
 Work out of pandas\_intro and rc\_files.
 
+Week 8: Introduce and play around with the sympy library. Mostly for fun.
+Work out of sympy directory
+
+Week 9: Spring break during the Spring semester.
