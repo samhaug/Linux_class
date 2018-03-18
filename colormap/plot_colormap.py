@@ -5,7 +5,7 @@
 File Name : plot_colormap.py
 Purpose : demonstrate how to plot color images with colorbars
 Creation Date : 07-03-2018
-Last Modified : Wed 14 Mar 2018 12:08:34 PM EDT
+Last Modified : Sun 18 Mar 2018 04:38:44 PM EDT
 Created By : Samuel M. Haugland
 
 ==============================================================================
@@ -17,7 +17,9 @@ import matplotlib.gridspec as gridspec
 
 
 def main():
+    '''
     #Read in two shear wave models at 70 km and 125 km 
+    '''
     dvs70 = np.genfromtxt('./dvs_70km.dat')
     dvs125 = np.genfromtxt('./dvs_125km.dat')
     #quick_way(dvs70)
