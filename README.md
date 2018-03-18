@@ -25,3 +25,7 @@ Week 8: Introduce and play around with the sympy library. Mostly for fun.
 Work out of sympy directory
 
 Week 9: Spring break during the Spring semester.
+
+Week 10: Work out of colormap directory. colormaps and gridspec.
+
+Week 11: hdf5, h5py. basics of git and github.
