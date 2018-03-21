@@ -1,0 +1,9 @@
+git clone from url:
+
+git clone https://github.com/samhaug/Linux_class
+
+git pull updates it
+
+git pull
+
+git add *
