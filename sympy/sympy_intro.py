@@ -26,6 +26,7 @@ Y88b  d88P    888     888   "   888 888           888
 import numpy as np
 #from sympy import symbols,simplify,expand_trig,sin,cos,sqrt,pi,lambdify
 #also can import everything from sympy
+#I'm putting this comment on github
 from sympy import *
 
 #Create symbol objects to be used in symbolic computations.
