@@ -1,4 +1,4 @@
-#!/home/samhaug/anaconda2/bin/python
+#!/home/samhaug/anaconda3/bin/python
 
 '''
 ==============================================================================
