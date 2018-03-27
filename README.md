@@ -28,4 +28,14 @@ Week 9: Spring break during the Spring semester.
 
 Week 10: Work out of colormap directory. colormaps and gridspec.
 
-Week 11: hdf5, h5py. basics of git and github.
+Week 11: Basics of git and github. Use github to download vim-airline. Use github\_intro as a test folder for this.
+
+Week 12: hdf5 and h5py
+
+Week 13: argparser
+
+Week 14: modules and intro to classes. Use mendeleev as an example. Possible neutron scattering?
+
+Week 15: Back to bash! bash scripting. Explore advanced bash script techniques.
+
+
